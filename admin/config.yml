@@ -2,7 +2,7 @@ backend:
   name: github
   repo: lextuga007/netlifycms-rmd-github
   branch: main
-  site_domain: netlifycms-rmd-github.netlify.app
+  site_domain: interactive-pages.netlify.app
 
 site_url: https://lextuga007.github.io/netlifycms-rmd-github/
 
