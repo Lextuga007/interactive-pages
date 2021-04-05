@@ -1,10 +1,10 @@
 backend:
   name: github
-  repo: tgerke/netlifycms-rmd-github
+  repo: lextuga007/netlifycms-rmd-github
   branch: main
   site_domain: netlifycms-rmd-github.netlify.app
 
-site_url: https://tgerke.github.io/netlifycms-rmd-github/
+site_url: https://lextuga007.github.io/netlifycms-rmd-github/
 
 media_folder: "images/uploads"
 
