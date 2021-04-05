@@ -10,7 +10,6 @@ output:
     gallery: false
     highlight: tango
 ---
-
 # Introduction
 
 The [https://www.netlifycms.org](NetlifyCMS) looks really cool. Hope this works!
@@ -18,6 +17,10 @@ The [https://www.netlifycms.org](NetlifyCMS) looks really cool. Hope this works!
 # Goal
 
 Ideally, we'll end up with a page that is editable by non-git users via Netlify's point-and-click interface.
+
+## Tweeks
+
+Changed this by making sure the GitHub repo has the same name as the Netlify page and adding ```/admin``` to the Netlify page (the GitHub page says authorized but doesn't lead to this page for editing).
 
 # Code
 
@@ -29,6 +32,7 @@ library(dplyr)
 starwars %>% 
   filter(species == "Droid")
 ```
+
 # New from Netlify
 
 Hi!!!
