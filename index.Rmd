@@ -18,7 +18,7 @@ The [https://www.netlifycms.org](NetlifyCMS) looks really cool. Hope this works!
 
 Ideally, we'll end up with a page that is editable by non-git users via Netlify's point-and-click interface.
 
-# Testing a change
+# Testing a change again
 
 ## Tweeks
 
