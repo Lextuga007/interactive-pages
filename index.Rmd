@@ -22,6 +22,18 @@ Ideally, we'll end up with a page that is editable by non-git users via Netlify'
 
 Changed this by making sure the GitHub repo has the same name as the Netlify page and adding ```/admin``` to the Netlify page (the GitHub page says authorized but doesn't lead to this page for editing).
 
+Also changed the runs on code in .github/workflows/render-markdown.yml
+
+```    
+runs-on: ${{ matrix.config.os }}
+    name: ${{ matrix.config.os }}
+    strategy:
+      matrix:
+        config:
+          - os: windows-latest
+          - os: macOS-latest
+          - os: ubuntu-16.04
+```
 # Code
 
 Here's some random `R` code in a block.
