@@ -7,7 +7,7 @@
 
         <meta name="author" content="Travis Gerke" />
     
-        <meta name="date" content="2021-04-03" />
+        <meta name="date" content="2021-04-08" />
     
     <title>Edit this wiki with Netlify CMS</title>
 
@@ -1781,7 +1781,10 @@ document.addEventListener('DOMContentLoaded', function() {
         <nav role="navigation" id="toc">
           <ul>
           <li><a href="#introduction">Introduction</a></li>
-          <li><a href="#goal">Goal</a></li>
+          <li><a href="#goal">Goal</a><ul>
+          <li><a href="#tweeks">Tweeks</a></li>
+          </ul></li>
+          <li><a href="#do-something-in-github-actions">Do something in GitHub actions</a></li>
           <li><a href="#code">Code</a></li>
           <li><a href="#new-from-netlify">New from Netlify</a></li>
           </ul>
@@ -1789,7 +1792,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <ul class="authors">
           <li class="divider"></li>
                                 <li><span><i class="glyphicon glyphicon-user"></i> Travis Gerke</span></li>
-                                         <li><span><i class="glyphicon glyphicon-calendar"></i> 2021-04-03</span></li>
+                                         <li><span><i class="glyphicon glyphicon-calendar"></i> 2021-04-08</span></li>
                   </ul>     
       </div>
       <div class="book-body fixed">
@@ -1816,6 +1819,22 @@ document.addEventListener('DOMContentLoaded', function() {
 <div id="goal" class="section level1">
 <h1>Goal</h1>
 <p>Ideally, we’ll end up with a page that is editable by non-git users via Netlify’s point-and-click interface.</p>
+<div id="tweeks" class="section level2">
+<h2>Tweeks</h2>
+<p>Changed this by making sure the GitHub repo has the same name as the Netlify page and adding <code>/admin</code> to the Netlify page (the GitHub page says authorized but doesn’t lead to this page for editing).</p>
+<p>Need to change the runs on code in .github/workflows/render-markdown.yml?</p>
+<pre><code>runs-on: ${{ matrix.config.os }}
+    name: ${{ matrix.config.os }}
+    strategy:
+      matrix:
+        config:
+          - os: windows-latest
+          - os: macOS-latest
+          - os: ubuntu-16.04</code></pre>
+</div>
+</div>
+<div id="do-something-in-github-actions" class="section level1">
+<h1>Do something in GitHub actions</h1>
 </div>
 <div id="code" class="section level1">
 <h1>Code</h1>
